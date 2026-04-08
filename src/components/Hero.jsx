@@ -8,7 +8,7 @@ import CustomButton from './CustomButton';
 
 const downloadCV = () => {
 
-  const fileUrl = "/Khushi-Resume1.pdf";
+  const fileUrl = "/Khushi-Resume.pdf";
 
   window.open(fileUrl, "_blank");
 
