@@ -1,6 +1,6 @@
 import ComapnyImg from '../assets/images/project-images/www.asinfotechsolution.co.in_ (1).png'
 import HealthImg from '../assets/images/project-images/parth-health-care.vercel.app_.png'
-import BdayImg from '../assets/images/project-images/buddy-birthday-umber.vercel.app_ (1).png'
+import ShopImg from '../assets/images/project-images/shopping-website-one-eosin.vercel.app_.png'
 
 
 const projects = [
@@ -13,10 +13,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Healthcare Website",
-    image: BdayImg,
+    title: "Shopping Website",
+    image: ShopImg,
     live: false,
-    template: "/projects/dashboard-full.png"
+    template: ShopImg
   },
   {
     id: 3,
