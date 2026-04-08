@@ -7,7 +7,18 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import CustomButton from './CustomButton';
 
 const downloadCV = () => {
-  window.open("/Khushi-Resume1.pdf", "_blank");
+
+  const fileUrl = "/Khushi-Resume1.pdf";
+
+  window.open(fileUrl, "_blank");
+
+  // 2️⃣ Download file
+  const link = document.createElement("a");
+  link.href = fileUrl;
+  link.download = "Khushi-Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 
@@ -50,8 +61,7 @@ const Hero = () => {
 
                   <CustomButton
                   text = "Download CV "
-                  href="/Khushi-Resume1.pdf"
-                  download 
+                  onClick={downloadCV}
                   />
                  
                 </div>
