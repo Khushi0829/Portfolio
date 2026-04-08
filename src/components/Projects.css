@@ -1,0 +1,68 @@
+.project-card {
+  background: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* VIEWPORT */
+.project-preview {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* IMAGE */
+.project-preview img {
+  width: 100%;
+  transition: transform 6s linear;
+}
+
+/* AUTO SCROLL LIKE PINTEREST */
+.project-preview:hover img {
+  transform: translateY(-60%);
+}
+
+.preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  width: 80%;
+  height: 85vh;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* SCROLLABLE TEMPLATE */
+.template-scroll {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.template-scroll img {
+  width: 100%;
+}
+

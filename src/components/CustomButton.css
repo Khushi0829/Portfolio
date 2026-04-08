@@ -1,0 +1,12 @@
+
+.custom-btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #ff6c04, #ff9303);
+}
+
+/* Hover Effect */
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}

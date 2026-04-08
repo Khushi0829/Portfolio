@@ -1,0 +1,138 @@
+/* CARD STYLE */
+.card-section{
+  background: #f5f5f7;
+  border-radius: 20px;
+  padding: 10px !important;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.section-title{
+  font-weight: 600;
+  margin-bottom: 15px;
+  color:#ff7a18;
+}
+
+/* ABOUT IMAGE */
+.about-img{
+  max-width:200px;
+  mix-blend-mode: darken;
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  gap:25px;
+  margin-top:20px;
+}
+
+.stats h5{
+  color:#ff7a18;
+  font-weight:700;
+}
+
+/* BUTTON */
+.learn-btn{
+  margin-top:15px;
+  border-radius:20px;
+  border:1px solid #ff7a18;
+  color:#ff7a18;
+}
+
+
+/* SKILLS CONTAINER */
+.skills-container{
+  background:#f5f5f7;
+  padding:10px;
+  border-radius:20px;
+}
+
+/* TITLE */
+.skills-title{
+  font-weight:600;
+}
+
+.skills-subtitle{
+  text-align:center;
+  font-size:14px;
+  color:#888;
+}
+
+/* GRID */
+/* .skills-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:25px;
+} */
+
+/* CARD */
+.skill-card{
+  background:white;
+  padding:10px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-5px);
+}
+
+
+.skill-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+
+/* ICON BOX */
+.skill-icon{
+  padding: 5px 8px;
+  /* margin:auto; */
+  border-radius:10px;
+  font-size:22px;
+  /* margin-bottom:10px; */
+}
+
+/* TEXT */
+.skill-card h6{
+  /* margin:0; */
+  font-weight:600;
+}
+
+/* PROGRESS */
+.progress{
+  /* height:10px !important; */
+  background:#e5e5e5;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:100%;
+  border-radius:20px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+  .skills-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:576px){
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media screen and (device-width:1024px) and (device-height:1366px) and (orientation:portrait ){
+ 
+}

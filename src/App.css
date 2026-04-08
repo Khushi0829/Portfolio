@@ -1,0 +1,46 @@
+
+/* -------- body css --------- */
+
+body {
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+
+   background:
+    linear-gradient(
+      135deg,
+      #5A5F3D,
+      #C95A1A,
+      #D86A22,
+      #3F442C
+    );
+
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+section{
+  background: linear-gradient(
+  to bottom,
+  #ffffff,
+  #f1f1f1
+);
+
+border-radius: 20px;
+}
+
+
+
+/* smooth gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+

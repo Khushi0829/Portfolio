@@ -1,0 +1,43 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 30px;
+
+  transition: all 0.3s ease;
+}
+
+/* Individual Colors on Hover */
+.social-icons a:nth-child(1) {
+  background: #333; /* GitHub */
+}
+
+.social-icons a:nth-child(2) {
+  background: #ea4335; /* Email */
+}
+
+.social-icons a:nth-child(3) {
+  background: #25d366; /* WhatsApp */
+}
+
+/* Hover Glow */
+.social-icons a:hover {
+  transform: translateY(-4px) scale(1.1);
+  color: #fff;
+}
