@@ -41,7 +41,7 @@ const Projects = () => {
                 "service_r1fp1t3",
                 "template_g9cw9f9",
                 formData,
-                "PUBLIC_KEY"
+                "20jt3TM1J_v3qbJ-9"
             )
             .then(() => {
                 toast.success("Message Sent!");
