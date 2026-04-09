@@ -36,13 +36,8 @@ const Projects = () => {
             `;
 
             // Send Email
+            emailjs.send("service_r1fp1t3","template_g9cw9f9", formData, "20jt3TM1J_v3qbJ-9")
 
-            emailjs.send(
-                "service_r1fp1t3",
-                "template_g9cw9f9",
-                formData,
-                "20jt3TM1J_v3qbJ-9"
-            )
             .then(() => {
                 toast.success("Message Sent!");
 
