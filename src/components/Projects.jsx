@@ -5,6 +5,10 @@ import './Projects.css'
 
 import projects from '../data/projectsData'
 import CustomButton from './CustomButton'
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+
 
 const Projects = () => {
         const [formData, setFormData] = useState({
@@ -31,8 +35,28 @@ const Projects = () => {
             Message: ${formData.message}
             `;
 
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-            window.open(whatsappURL, "_blank");
+            // Send Email
+
+            emailjs.send(
+                "service_r1fp1t3",
+                "template_g9cw9f9",
+                formData,
+                "PUBLIC_KEY"
+            )
+            .then(() => {
+                toast.success("Message Sent!");
+
+                //Reset form
+
+                setFormData({
+                    name:"",
+                    email:"",
+                    message:""
+                });
+            })
+            .catch(() => {
+                toast.error("Failed to send message");
+            });
         };
   return (
 
@@ -73,7 +97,8 @@ const Projects = () => {
 
                                 <input
                                   type="text"
-                                  placeholder="First Name"
+                                  name="name"
+                                  placeholder="Name"
                                   className="form-control mb-1"
                                   onChange={handleChange} 
                                   required
@@ -81,6 +106,7 @@ const Projects = () => {
 
                                 <input
                                   type="email"
+                                  name="email"
                                   placeholder="Email"
                                   className="form-control mb-1"
                                   onChange={handleChange} 
@@ -89,6 +115,7 @@ const Projects = () => {
 
                                 <textarea
                                   rows="2"
+                                  name="message"
                                   placeholder="Message"
                                   className="form-control mb-1"
                                   onChange={handleChange} 
