@@ -67,3 +67,27 @@
   width: 100%;
 }
 
+/* HORIZONTAL SCROLL */
+.projects-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #f17a22 #f1f1f1;
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb {
+  background: #f17a22;
+  border-radius: 10px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #d86a22;
+}
+

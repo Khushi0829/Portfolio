@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Navbar.css";
 import SocialIcons from './SocialIcons';
-import HeroImg from '../assets/images/ChatGPT Image Apr 3, 2026, 06_52_42 PM.png'
+// import HeroImg from '../assets/images/ChatGPT Image Apr 3, 2026, 06_52_42 PM.png'
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CustomButton from './CustomButton';
@@ -30,13 +30,6 @@ const Hero = () => {
     }
   }
 
-//   const codeIcon {
-//     return{
-//       marginRight: "10px",
-//       color: "#ff7a18"
-//     }
-  
-// }
   return (
           <div id="home">
         <div className="row d-flex justify-content-center align-items-center ">
@@ -59,8 +52,8 @@ const Hero = () => {
                     </ul>
                   </p>
 
-                  <CustomButton
-                  text = "Download CV "
+                  <CustomButton className="d-flex align-items-center gap-2"
+                  text = {<>Download CV <i className="fa-solid fa-download "></i></>}
                   onClick={downloadCV}
                   />
                  
@@ -71,7 +64,7 @@ const Hero = () => {
             <div className="col-lg-6 col-sm-5 col-12">
                 {/* RIGHT IMAGE */}
                 <div className="right-img">
-                  <img src={HeroImg} alt="hero" className="hero-img text-center img-fluid" />
+                  <img src="https://res.cloudinary.com/dctxgziod/image/upload/v1778743831/ChatGPT_Image_Apr_3_2026_06_52_42_PM_vstzvp.png" alt="hero" className="hero-img text-center img-fluid" />
                 </div>
                 
             </div>

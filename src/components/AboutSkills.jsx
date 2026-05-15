@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImg from "../assets/images/ChatGPT Image Apr 4, 2026, 04_40_39 PM.png"
+// import AboutImg from "../assets/images/ChatGPT Image Apr 4, 2026, 04_40_39 PM.png"
 
 import './AboutSkills.css'
 
@@ -36,7 +36,7 @@ const AboutSkills = () => {
                 <div className="card-section">
                     <div className="row align-items-center ">
                         <div className="col-lg-5 col-sm-5 col-12 ">
-                            <img src={AboutImg} alt="" className='img-fluid about-img' />
+                            <img src="https://res.cloudinary.com/dctxgziod/image/upload/v1778743797/ChatGPT_Image_Apr_4_2026_04_40_39_PM_x6v0c9.png" alt="" className='img-fluid about-img' />
                         </div>
 
                         <div className="col-lg-7 col-sm-7 col-12 ">
