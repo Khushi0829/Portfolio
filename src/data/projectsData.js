@@ -14,10 +14,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Healthcare Website",
-    image: "https://res.cloudinary.com/dctxgziod/image/upload/v1778743958/parth-health-care.vercel.app__g8pxvd.png",
+    title: "Shopping Website",
+    image: "https://res.cloudinary.com/doqruncrn/image/upload/v1778924295/localhost_3000__bl0ub2.jpg",
     live: true,
-    link: "https://parth-health-care.vercel.app/"
+    link: "https://react-e-commerce-mu-three.vercel.app/"
   },
   {
     id: 3,
@@ -28,10 +28,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "Shopping Website",
-    image: "https://res.cloudinary.com/doqruncrn/image/upload/v1778924295/localhost_3000__bl0ub2.jpg",
+    title: "Healthcare Website",
+    image: "https://res.cloudinary.com/dctxgziod/image/upload/v1778743958/parth-health-care.vercel.app__g8pxvd.png",
     live: true,
-    link: "https://react-e-commerce-mu-three.vercel.app/"
+    link: "https://parth-health-care.vercel.app/"
   },
   {
     id: 5,
