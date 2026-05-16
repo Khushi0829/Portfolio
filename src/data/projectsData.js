@@ -29,10 +29,17 @@ const projects = [
   {
     id: 4,
     title: "Shopping Website",
+    image: "https://res.cloudinary.com/doqruncrn/image/upload/v1778924295/localhost_3000__bl0ub2.jpg",
+    live: true,
+    link: "https://react-e-commerce-mu-three.vercel.app/"
+  },
+  {
+    id: 5,
+    title: "Shopping Website",
     image: ShopImg,
     live: false,
     template: ShopImg
-  },
+  }
 ];
 
 export default projects;
